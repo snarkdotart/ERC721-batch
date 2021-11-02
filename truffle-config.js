@@ -28,13 +28,14 @@ module.exports = {
       gasPrice: 7000000000, // 7 Gwei
       network_id: 4,
       confirmations: 2,
+      timeoutBlocks: 200,
       skipDryRun: true,
     },
     mainnet: {
       provider: new HDWalletProvider(process.env.SECRET_KEY, "https://mainnet.infura.io/v3/" + process.env.PROJECT_ID),
-      gas: 7900000,
+      gas: 6900000,
       // gasPrice: 7000000000, // 7 Gwei
-      gasPrice: 124000000000, // 7 Gwei
+      gasPrice: 62000000000, // 7 Gwei
       network_id: 1,
       confirmations: 2,
       skipDryRun: true,
